@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Mạnh Hải Agency</title>
+<meta name="description" content="Mạnh Hải Agency — Dịch vụ SEO, Podcast & Social">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --bg: #0F1115;
+    --bg-soft: #161922;
+    --text: #F5F3EE;
+    --text-dim: #9A9A92;
+    --gold: #C9A24B;
+    --moss: #4A7A6B;
+    --border: rgba(245, 243, 238, 0.08);
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body {
+    background: var(--bg);
+    color: var(--text);
+    font-family: 'Inter', sans-serif;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    padding: 56px 20px 80px;
+  }
+  .page { width: 100%; max-width: 440px; display: flex; flex-direction: column; align-items: center; }
+  .avatar {
+    width: 92px; height: 92px; border-radius: 50%;
+    background: linear-gradient(160deg, var(--gold), var(--moss));
+    display: flex; align-items: center; justify-content: center;
+    font-family: 'Space Grotesk', sans-serif; font-weight: 700; font-size: 30px;
+    color: var(--bg); margin-bottom: 20px; letter-spacing: -0.5px;
+  }
+  h1 { font-family: 'Space Grotesk', sans-serif; font-weight: 700; font-size: 26px; letter-spacing: -0.3px; text-align: center; }
+  .tagline { color: var(--text-dim); font-size: 14px; margin-top: 8px; text-align: center; max-width: 320px; line-height: 1.5; }
+  .group { width: 100%; margin-top: 38px; }
+  .group-label { font-family: 'Space Grotesk', sans-serif; font-size: 11px; font-weight: 700; letter-spacing: 1.5px; text-transform: uppercase; color: var(--text-dim); margin-bottom: 12px; padding-left: 4px; }
+  .group--agency .group-label { color: var(--gold); }
+  .group--podcast .group-label { color: var(--moss); }
+  .link {
+    display: flex; align-items: center; gap: 14px; width: 100%;
+    background: var(--bg-soft); border: 1px solid var(--border); border-radius: 14px;
+    padding: 16px 18px; margin-bottom: 12px; text-decoration: none; color: var(--text);
+    position: relative; overflow: hidden; transition: border-color 0.25s ease, transform 0.15s ease;
+  }
+  .link::before {
+    content: ""; position: absolute; inset: 0; border-radius: 14px; padding: 1px;
+    background: linear-gradient(120deg, var(--gold), transparent 40%, var(--moss));
+    opacity: 0; transition: opacity 0.25s ease;
+    -webkit-mask: linear-gradient(#000 0 0) content-box, linear-gradient(#000 0 0);
+    -webkit-mask-composite: xor; mask-composite: exclude; pointer-events: none;
+  }
+  .link:hover { transform: translateY(-1px); }
+  .link:hover::before { opacity: 1; }
+  .link-icon { width: 38px; height: 38px; flex-shrink: 0; border-radius: 10px; background: rgba(245, 243, 238, 0.06); display: flex; align-items: center; justify-content: center; font-size: 17px; }
+  .link-text { flex: 1; }
+  .link-title { font-weight: 600; font-size: 15px; }
+  .link-sub { font-size: 12px; color: var(--text-dim); margin-top: 2px; }
+  .link-arrow { color: var(--text-dim); font-size: 14px; }
+  .socials { display: flex; gap: 12px; margin-top: 32px; }
+  .social {
+    width: 46px; height: 46px; border-radius: 50%; background: var(--bg-soft);
+    border: 1px solid var(--border); display: flex; align-items: center; justify-content: center;
+    color: var(--text); text-decoration: none; font-size: 18px;
+    transition: border-color 0.2s ease, transform 0.15s ease;
+  }
+  .social:hover { border-color: var(--gold); transform: translateY(-2px); }
+  footer { margin-top: 48px; font-size: 12px; color: var(--text-dim); text-align: center; }
+  @media (max-width: 380px) { h1 { font-size: 22px; } }
+</style>
+</head>
+<body>
+<div class="page">
+  <div class="avatar">MH</div>
+  <h1>Mạnh Hải Agency</h1>
+  <p class="tagline">SEO • Link-building • Podcast — đồng hành cùng thương hiệu của bạn lên top</p>
+  <div class="group group--agency">
+    <div class="group-label">Agency</div>
+    <a class="link" href="#" target="_blank" rel="noopener">
+      <div class="link-icon">📋</div>
+      <div class="link-text">
+        <div class="link-title">Bảng giá dịch vụ SEO</div>
+        <div class="link-sub">Gói link-building & SEO tổng thể</div>
+      </div>
+      <div class="link-arrow">→</div>
+    </a>
+    <a class="link" href="#" target="_blank" rel="noopener">
+      <div class="link-icon">💬</div>
+      <div class="link-text">
+        <div class="link-title">Tư vấn miễn phí</div>
+        <div class="link-sub">Nhắn Zalo / Messenger</div>
+      </div>
+      <div class="link-arrow">→</div>
+    </a>
+  </div>
+  <div class="group group--podcast">
+    <div class="group-label">Podcast</div>
+    <a class="link" href="#" target="_blank" rel="noopener">
+      <div class="link-icon">🎙️</div>
+      <div class="link-text">
+        <div class="link-title">Mạnh Hải Podcast</div>
+        <div class="link-sub">Nghe trên Apple Podcasts</div>
+      </div>
+      <div class="link-arrow">→</div>
+    </a>
+    <a class="link" href="#" target="_blank" rel="noopener">
+      <div class="link-icon">🏆</div>
+      <div class="link-text">
+        <div class="link-title">TOP SEO Podcast</div>
+        <div class="link-sub">Nghe trên Apple Podcasts</div>
+      </div>
+      <div class="link-arrow">→</div>
+    </a>
+    <a class="link" href="#" target="_blank" rel="noopener">
+      <div class="link-icon">🎧</div>
+      <div class="link-text">
+        <div class="link-title">Tất cả podcast trên Buzzsprout</div>
+        <div class="link-sub">Trang tổng hợp các tập</div>
+      </div>
+      <div class="link-arrow">→</div>
+    </a>
+  </div>
+  <div class="socials">
+    <a class="social" href="#" target="_blank" rel="noopener" title="Facebook">f</a>
+    <a class="social" href="#" target="_blank" rel="noopener" title="TikTok">t</a>
+    <a class="social" href="#" target="_blank" rel="noopener" title="YouTube">▶</a>
+    <a class="social" href="#" target="_blank" rel="noopener" title="Zalo">Z</a>
+  </div>
+  <footer>© 2026 Mạnh Hải Agency</footer>
+</div>
+</body>
+</html>
